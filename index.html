@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TailwindCSS markup</title>
+	<link rel="stylesheet" href="./public/styles.css" />
+</head>
+
+<body>
+	<div class="max-w-screen-2xl mx-auto">
+		<!-- header -->
+		<header class="p-2 flex items-center justify-between">
+			<a class="uppercase font-bold text-purple-800" href="">WebDev</a>
+			<nav class="flex items-center gap-x-4">
+				<ul class="flex items-center">
+					<li>
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<ul class="flex items-center gap-x-2">
+					<li>
+						<button class="header-btn focus:outline-none focus:ring focus:ring-violet-300">
+							Login
+						</button>
+					</li>
+					<li>
+						<button class="header-btn">Register</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- divider -->
+		<div class="border border-dotted"></div>
+
+		<!-- breadcrumbs -->
+		<div class="px-2 py-4 overflow-y-auto whitespace-nowrap flex items-center">
+			<a class="text-gray-600 hover:text-gray-900" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+					viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+				</svg>
+			</a>
+			<span class="mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+				</svg>
+			</span>
+			<a class="text-gray-600 hover:text-gray-900" href="#">News</a>
+			<span class="mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+				</svg>
+			</span>
+			<a class="text-gray-600" href="#">Tech</a>
+		</div>
+
+		<!-- banners -->
+		<section class="px-2 flex space-x-2">
+			<div class="inline-block h-96 w-2/3 bg-violet-300 mb-4 relative rounded overflow-hidden" href="#">
+				<div class="p-4 absolute bottom-0 left-0 z-20">
+					<h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit
+					</h2>
+				</div>
+			</div>
+
+			<a class="inline-block h-96 w-1/3 bg-indigo-300 mb-4 relative rounded overflow-hidden" href="#">
+				<div class="p-4 absolute bottom-0 left-0 z-20">
+					<h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+						Lorem ipsum dolor sit amet consectetur
+					</h2>
+				</div>
+			</a>
+		</section>
+
+		<!-- main -->
+		<main class="flex">
+			<div class="w-2/3">
+				<!-- post cards -->
+				<section class="px-2">
+					<a class="block mb-10" href="#">
+						<div class="flex">
+							<div>
+								<h3 class="mt-2 mb-2 text-gray-700 font-bold text-2xl">
+									Lorem Ipsum is simply dummy text of the printing
+									and typesetting industry
+								</h3>
+								<p class="text-gray-700">
+									Lorem Ipsum has been the industry's standard dummy
+									text ever since the 1500s, when an unknown printer
+									took a galley of type and scrambled it to make a
+									type specimen book. It has survived not only five
+									centuries, but also the leap into electronic
+									typesetting, remaining essentially unchanged. It
+									was popularised in the 1960s with the release of
+									Letraset sheets containing Lorem Ipsum passages,
+									and more recently with desktop publishing software
+									like Aldus PageMaker including versions of Lorem
+									Ipsum.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a class="block mb-10" href="#">
+						<div class="flex">
+							<div>
+								<h3 class="mt-2 mb-2 text-gray-700 font-bold text-2xl">
+									Suspendisse et ligula venenatis, aliquam magna in,
+									ornare magna
+								</h3>
+								<p class="text-gray-700">
+									Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do eiusmod tempor incididunt ut labore
+									et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut
+									aliquip ex ea commodo consequat. Duis aute irure
+									dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint occaecat cupidatat non proident, sunt in
+									culpa qui officia deserunt mollit anim id est
+									laborum.
+								</p>
+							</div>
+						</div>
+					</a>
+					<a class="block mb-10" href="#">
+						<div class="flex">
+							<div>
+								<h3 class="mt-2 mb-2 text-gray-700 font-bold text-2xl">
+									Aliquam porta metus nec eros vehicula, ut interdum
+									felis commodo
+								</h3>
+								<p class="text-gray-700">
+									On the other hand, we denounce with righteous
+									indignation and dislike men who are so beguiled
+									and demoralized by the charms of pleasure of the
+									moment, so blinded by desire, that they cannot
+									foresee the pain and trouble that are bound to
+									ensue; and equal blame belongs to those who fail
+									in their duty through weakness of will, which is
+									the same as saying through shrinking from toil and
+									pain. These cases are perfectly simple and easy to
+									distinguish. In a free hour, when our power of
+									choice is untrammelled and when nothing prevents
+									our being able to do what we like best, every
+									pleasure is to be welcomed and every pain avoided.
+								</p>
+							</div>
+						</div>
+					</a>
+				</section>
+				<hr>
+				<!-- pagination -->
+				<div class="mt-10 mb-10">
+					<ul class="flex justify-center">
+						<li>
+							<a class="pagination-item w-32 text-center rounded-l-lg" href="#">&lt;&lt; Previous</a>
+						</li>
+						<li>
+							<a class="pagination-item" href="#">1</a>
+						</li>
+						<li>
+							<a class="pagination-item" href="#">2</a>
+						</li>
+						<li>
+							<a class="pagination-item font-bold text-blue-600 hover:bg-blue-100 hover:text-blue-600"
+								href="#">3</a>
+						</li>
+						<li>
+							<a class="pagination-item" href="#">4</a>
+						</li>
+						<li>
+							<a class="pagination-item" href="#">5</a>
+						</li>
+						<li>
+							<a class="pagination-item w-32 text-center rounded-r-lg" href="#">Next &gt;&gt;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="w-1/3 px-2">
+				<!-- subscribe -->
+				<div class="my-5">
+					<h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
+						Subscribe
+					</h5>
+					<p class="text-gray-600 mb-4">Subscribe to our newsletter.</p>
+					<input class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
+						placeholder="your email address" type="email" />
+					<button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">
+						Subscribe
+					</button>
+				</div>
+				<!-- divider -->
+				<div class="border border-dotted"></div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="border-t mt-10 py-10 px-20">
+			<div class="flex">
+				<div class="mb-5 w-2/5">
+					<h6 class="font-bold text-gray-700 mb-3">Company</h6>
+					<ul>
+						<li>
+							<a class="inline-block text-gray-500 py-2 hover:underline" href="#">Team</a>
+						</li>
+						<li>
+							<a class="inline-block text-gray-500 py-2 hover:underline" href="#">About Us</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="w-2/5">
+					<h6 class="font-bold text-gray-700 mb-3">Content</h6>
+					<ul>
+						<li>
+							<a class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
+								href="#">Block</a>
+						</li>
+						<li>
+							<a class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
+								href="#">Policy</a>
+						</li>
+						<li>
+							<a class="inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2"
+								href="#">Documentation</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="w-1/5">
+					<h6 class="font-bold text-gray-700 mb-3">Contact Us</h6>
+					<ul class="flex gap-3">
+						<li>
+							<a class="contact-links" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+									viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="contact-links" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+									viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="contact-links" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+									viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
